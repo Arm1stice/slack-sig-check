@@ -97,7 +97,7 @@ export class SlackSigChecker {
     signature: string,
     body: string,
     timestamp: string,
-    callback?: (valid: boolean | null, err: Error | null) => void
+    callback?: (isValid: boolean | null, err: Error | null) => void
   ): Promise<boolean> | undefined {
     if (callback) {
       // If the user is passing a callback, we handle the Promise ourselves and call their callback.

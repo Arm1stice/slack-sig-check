@@ -1,5 +1,7 @@
 **
 
-!lib/
+!lib/index.js
+!lib/index.d.ts
+!lib/index.js.map
 !LICENSE
 !package.json

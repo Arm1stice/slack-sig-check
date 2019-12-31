@@ -1,6 +1,6 @@
 {
   "name": "slack-sig-check",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for checking the integrity of Slack webhook signatures",
   "main": "lib/index.js",
   "scripts": {
