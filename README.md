@@ -61,7 +61,7 @@ app.listen(8080);
 ```
 
 ### Important Note!
-If you use the "urlencoded" body parsing middleware from the [body-parser](https://npmjs.com/package/body-parser) module, you will need to ensure the original body is preserved in the "rawBody" paramter of the request using the `verify` callback, like below:
+If you use the "urlencoded" body parsing middleware from the [body-parser](https://npmjs.com/package/body-parser) module, or if you modify the body of the POST request in any way, you will need to ensure the original body is preserved in the "rawBody" paramter of the request. For the `body-parser` module, you can use the `verify` callback, like below:
 ```js
 const express = require("express");
 const app = express();
