@@ -3,7 +3,7 @@ An NPM module for checking the integrity of Slack webhook signatures
 
 # Getting started
 ```js
-const SlackSigChecker = require("slack-sig-checker");
+const { SlackSigChecker } = require("slack-sig-checker");
 const checker = new SlackSigChecker("SLACK_SIGNING_SECRET");
 ```
 
